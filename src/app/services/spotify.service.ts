@@ -32,7 +32,7 @@ export class SpotifyService{
           .map(res => res.json());
   }
 
-  getAlbums(id:string){
+  getAlbum(id:string){
       this.albumUrl = 'https://api.spotify.com/v1/albums/'+id;
           return this._http.get(this.albumUrl)
             .map(res => res.json());
